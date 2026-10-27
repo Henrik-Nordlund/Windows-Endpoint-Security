@@ -44,6 +44,8 @@ The overview indicated that no action was required in these areas at the time sh
 
 A Windows Update screenshot displayed a warning that the system was missing security and quality updates. It also indicated that automatic updates had been disabled by an organizational policy.
 
+<img width="788" height="626" alt="Update and Security - 1" src="https://github.com/user-attachments/assets/288dc5ad-8873-4d87-84a2-fb0e008829e7" />   
+
 The screenshot showed an update check dated September 16, 2020.
 
 **Security consideration:** Missing security updates can leave a system exposed to known vulnerabilities. Update status and policy configuration should therefore be reviewed as part of endpoint security maintenance.
@@ -73,6 +75,10 @@ The available screenshots document two different Quick Scan results:
 | Earlier recorded scan | April 13, 2020 | 54 seconds | 16,113 | 0 |
 | Later recorded scan | May 29, 2024 | 3 minutes 8 seconds | 34,072 | 0 |
 
+<img width="842" height="728" alt="Run Antivirus Quick Scan - 6" src="https://github.com/user-attachments/assets/96cb835e-685c-4b40-ab31-2a95cc9ad746" />   
+
+<img width="845" height="722" alt="Run Antivirus Quick Scan - 7" src="https://github.com/user-attachments/assets/d0bfd815-515f-4456-9680-939a3db0fa39" />   
+
 Both screenshots reported no detected threats.
 
 The screenshots show different scan dates and results and are documented as separate observations.
@@ -87,6 +93,8 @@ The Windows Security interface displayed the following scan options:
 - Full scan
 - Custom scan
 - Microsoft Defender Offline scan
+
+<img width="850" height="726" alt="Scan Options- Custom Scan - 9" src="https://github.com/user-attachments/assets/f9bc0800-5d37-474a-9af3-d1161da970df" />    
 
 Custom scan was selected in the recorded screenshot. The available evidence does not establish that a Custom Scan was subsequently executed.
 
