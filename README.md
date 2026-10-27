@@ -36,6 +36,8 @@ The Windows Security overview displayed the following protection areas:
 - App & browser control
 - Device security
 
+<img width="771" height="607" alt="Windows Security - 2" src="https://github.com/user-attachments/assets/d334fc0f-5f87-4fbf-bf05-2bae803349ae" />   
+
 The overview indicated that no action was required in these areas at the time shown in the screenshot.
 
 ### 1.2 Review Windows Update Status
