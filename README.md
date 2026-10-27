@@ -60,11 +60,12 @@ The Windows Security interface displayed the following protection definition inf
 - **Version created:** May 29, 2024, 1:07 AM
 - **Last update:** May 29, 2024, 5:33 PM
 
+<img width="851" height="723" alt="Check for Updates - 5" src="https://github.com/user-attachments/assets/6a2343e9-d0dd-46c3-9764-6070bd81d2a5" />   
+
+
 The interface also provided an option to check for updates.
 
 **Security consideration:** Antivirus protection depends in part on current threat intelligence and definitions. Reviewing the update status helps establish whether the recorded protection information is current for the time of the observation.
-
-The screenshot documents the displayed version and update timestamp; it does not independently establish the current status of the antivirus engine or all protection components.
 
 ### 1.4 Perform and Review a Quick Scan
 
@@ -96,7 +97,7 @@ The Windows Security interface displayed the following scan options:
 
 <img width="850" height="726" alt="Scan Options- Custom Scan - 9" src="https://github.com/user-attachments/assets/f9bc0800-5d37-474a-9af3-d1161da970df" />    
 
-Custom scan was selected in the recorded screenshot. The available evidence does not establish that a Custom Scan was subsequently executed.
+Custom scan was selected here. 
 
 ## Part 2: Windows Firewall
 
@@ -112,8 +113,6 @@ Planned documentation includes:
 - Verification of the recorded configuration
 - Security implications and limitations
 
-Only configurations and results supported by the lab evidence will be documented as completed.
-
 ## Security Analysis
 
 The Defender exercises demonstrate basic endpoint protection checks, including reviewing protection definitions, examining Windows Update status, and interpreting antivirus scan results.
@@ -127,8 +126,7 @@ The Windows Firewall section will extend this analysis by examining how host-bas
 - The project is based on guided exercises in a virtual lab environment.
 - The available screenshots do not establish that the system was exposed to real malware or that detection effectiveness was independently tested.
 - Different timestamps and recorded system states are kept separate.
-- The project does not claim production deployment or enterprise-scale security validation.
-- Additional findings will be included only when supported by the original lab material or subsequent documented tests.
+- This project does not claim production deployment or enterprise-scale security validation.
 
 ## Learning Outcomes
 
