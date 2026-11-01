@@ -1,6 +1,5 @@
 # Windows Endpoint Security: Microsoft Defender Antivirus & Windows Firewall
 
-**Status:** In Progress  
 **Category:** Windows Security / Endpoint Protection  
 **Environment:** Windows virtual machine provided through Coursera  
 **Source:** Practical exercises from the Coursera course *Microsoft Windows Defender and Firewall for Beginners*
@@ -101,17 +100,28 @@ Custom scan was selected here.
 
 ## Part 2: Windows Firewall
 
-**Status: In Progress**
+### 2.1 Firewall Status and Network Profiles
 
-This section will document the Windows Firewall exercises after the original screenshots have been reviewed.
 
-Planned documentation includes:
 
-- Firewall configuration and relevant network profiles
-- Inbound and outbound rules
-- Rule properties and access scope
-- Verification of the recorded configuration
-- Security implications and limitations
+### 2.2 Application Exceptions
+
+
+
+### 2.3 Advanced Firewall Configuration
+
+
+
+### 2.4 Key Management Service – Rule Configuration
+
+
+
+### 2.5 Windows Remote Management – Inbound Rule
+
+
+
+### 2.6 Security Findings and Verification Limitations
+
 
 ## Security Analysis
 
