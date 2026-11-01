@@ -247,6 +247,29 @@ The screenshots document the displayed firewall rule configuration. They do not 
 
 ### 2.6 Security Findings and Verification Limitations
 
+The Windows Firewall exercises demonstrated how host-based firewall configuration can be used to control network access and reduce unnecessary exposure of Windows services.
+
+**Key findings:**
+
+- **Network profiles:** Windows Defender Firewall was enabled for Domain, Private, and Public networks, with the Public profile active in the recorded lab environment.
+- **Default traffic policies:** Inbound connections without a matching rule were blocked by default, while outbound connections without a matching rule were allowed.
+- **Application exceptions:** The configuration differed between Private and Public networks, illustrating how application access can be controlled according to network profile.
+- **Service-specific rules:** The Key Management Service exercise demonstrated profile-based firewall rule configuration for TCP port 1688.
+- **Remote administration:** The Windows Remote Management exercise documented an enabled blocking rule for inbound HTTP-based management traffic on TCP port 5985.
+
+**Security implications:**
+
+The exercises illustrate the importance of applying firewall restrictions according to network trust levels and operational requirements.
+
+Limiting unnecessary inbound connections, particularly for administrative services, can reduce the attack surface of a Windows endpoint. Firewall configuration should follow the principle of least privilege while preserving required system functionality.
+
+**Verification limitations:**
+
+I need to make clear that no packet captures, connection attempts, or firewall logs were available to verify the actual enforcement of the documented rules. The screenshots are the available documentation.
+
+The results in this windows endpoint project therefore demonstrate practical firewall configuration and inspection rather than a comprehensive assessment of the firewall effectiveness itself.
+
+
 
 ## Security Analysis
 
