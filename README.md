@@ -145,7 +145,39 @@ The screenshots document the displayed exception settings and their differences.
 
 
 ### 2.3 Advanced Firewall Configuration
+Windows Defender Firewall with Advanced Security was opened to examine the firewall's configuration and rule management capabilities.
 
+The interface provides access to:
+
+- **Inbound Rules:** Control incoming network connections.
+- **Outbound Rules:** Control outgoing network connections.
+- **Connection Security Rules:** Configure connection security policies, including IPsec.
+- **Monitoring:** Review firewall and connection security information.
+
+The overview displayed the following configuration for all three network profiles:
+
+| Setting | Domain | Private | Public |
+|---|---|---|---|
+| Firewall status | On | On | On |
+| Inbound connections not matching a rule | Block | Block | Block |
+| Outbound connections not matching a rule | Allow | Allow | Allow |
+
+<img width="1012" height="711" alt="Advanced Settings Overview - 8" src="https://github.com/user-attachments/assets/f419d06c-2c14-4d98-8553-f2e898d66a85" />   
+
+The Public profile was active in the recorded environment.
+
+This configuration follows a default-deny approach for unsolicited inbound traffic while permitting outbound traffic unless a rule explicitly blocks it.
+
+The Inbound Rules interface was also examined. It displayed predefined rules for Windows services and features, including File and Printer Sharing, Network Discovery, Remote Desktop, Windows Remote Management, and Key Management Service.
+
+Individual rules can specify whether connections are allowed or blocked, whether the rule is enabled, and which network profiles it applies to.
+
+<img width="1016" height="717" alt="Key Management Service - 9" src="https://github.com/user-attachments/assets/24e42855-fd4e-4503-8b80-582a65a8736d" />   
+
+
+**Security consideration:** Firewall rules should be configured according to operational requirements and the principle of least privilege. Unnecessary inbound access should be restricted, particularly for administrative services and systems connected to untrusted networks.
+
+The screenshots document the displayed firewall policies and rule configurations. They do not establish that traffic filtering was independently tested.
 
 
 ### 2.4 Key Management Service – Rule Configuration
