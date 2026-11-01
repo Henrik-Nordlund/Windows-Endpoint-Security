@@ -101,7 +101,23 @@ Custom scan was selected here.
 ## Part 2: Windows Firewall
 
 ### 2.1 Firewall Status and Network Profiles
+Windows Defender Firewall was reviewed through the Windows Security interface to examine the firewall status and configuration of the three available network profiles:
 
+- **Domain network:** Firewall enabled; no active domain network connection.
+- **Private network:** Firewall enabled; no active private network connection.
+- **Public network:** Firewall enabled; active network identified as *Network 6*.
+
+The firewall was enabled for all three profiles, with the Public network profile active in the lab environment.
+
+The option to block all incoming connections, including those for allowed applications, was not selected in the displayed profile settings.
+
+**Security consideration:** Windows Firewall uses separate network profiles to apply security settings according to the type of network connection. Public networks generally require more restrictive access controls because the connected devices and network environment cannot be assumed to be trusted.
+
+<img width="836" height="680" alt="Firewall and Network Protection - 2" src="https://github.com/user-attachments/assets/10f9ef00-bd90-440d-b330-a05817e64c10" />    
+
+<img width="851" height="691" alt="Public Network - 5" src="https://github.com/user-attachments/assets/f8095f1c-2cdf-474a-a7d8-4e50bef094c1" />    
+
+The screenshots above confirm the displayed firewall status and active network profile but do not independently verify network traffic filtering.
 
 
 ### 2.2 Application Exceptions
