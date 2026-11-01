@@ -265,11 +265,9 @@ Limiting unnecessary inbound connections, particularly for administrative servic
 
 **Verification limitations:**
 
-I need to make clear that no packet captures, connection attempts, or firewall logs were available to verify the actual enforcement of the documented rules. The screenshots are the available documentation.
+The available screenshots document the displayed firewall settings and rule configurations. No packet captures, connection attempts, or firewall logs were available to independently verify enforcement of the documented rules.
 
-The results in this windows endpoint project therefore demonstrate practical firewall configuration and inspection rather than a comprehensive assessment of the firewall effectiveness itself.
-
-
+The results therefore demonstrate practical firewall configuration and inspection rather than a comprehensive assessment of the effectiveness of the firewall.
 
 ## Security Analysis
 
@@ -277,7 +275,7 @@ The Defender exercises demonstrate basic endpoint protection checks, including r
 
 The observations also illustrate an important distinction: a scan that reports no detected threats is not equivalent to a complete security assessment. Endpoint security depends on multiple controls, including patch management, appropriate configuration, network protection, and ongoing monitoring.
 
-The Windows Firewall section will extend this analysis by examining how host-based network traffic controls contribute to endpoint security.
+The Windows Firewall exercises demonstrate how network access can be controlled through firewall rules and network profiles according to different security requirements.
 
 ## Limitations
 
@@ -288,23 +286,16 @@ The Windows Firewall section will extend this analysis by examining how host-bas
 
 ## Learning Outcomes
 
-This project is intended to demonstrate practical familiarity with Windows endpoint security interfaces, antivirus scan verification, protection definition status, and Windows Firewall configuration.
+This project demonstrates practical experience with Microsoft Defender Antivirus and Windows Firewall, including:
 
-The final learning outcomes and conclusions will be expanded when the Firewall section has been reconstructed and reviewed.
+- Reviewing endpoint protection status, security updates, and antivirus scan results.
+- Configuring application exceptions and inbound firewall rules.
+- Applying firewall restrictions based on network profiles and security requirements.
+- Evaluating security configurations and recognizing the limitations of available evidence.
 
 ## Acknowledgment
 
 The original practical exercises were based on the Coursera course *Microsoft Windows Defender and Firewall for Beginners*. This repository reorganizes and documents the lab work for technical learning and portfolio purposes.
 
-## Project Status
-
-- [x] Review available Defender screenshots
-- [x] Document recorded protection definition information
-- [x] Document available Quick Scan results
-- [x] Record relevant limitations and timestamp differences
-- [ ] Reconstruct the Windows Firewall exercises
-- [ ] Add verified Firewall configuration evidence
-- [ ] Complete the combined security analysis
-- [ ] Final review and publication
 
 
