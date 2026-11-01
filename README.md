@@ -181,7 +181,41 @@ The screenshots document the displayed firewall policies and rule configurations
 
 
 ### 2.4 Key Management Service – Rule Configuration
+The predefined **Key Management Service (TCP-In)** firewall rule was examined through Windows Defender Firewall with Advanced Security.
 
+Key Management Service (KMS) is used for volume activation of Microsoft products in organizational environments. KMS communication typically uses TCP port **1688**.
+
+The available screenshots document the inspection and configuration of the rule, including:
+
+- **Rule status:** Whether the rule is enabled or disabled.
+- **Action:** Whether matching inbound connections are allowed or blocked.
+- **Network profiles:** Whether the rule applies to Domain, Private, or Public networks.
+- **Protocol and port:** TCP port 1688.
+
+The rule properties were examined to review the available configuration options.
+<img width="1016" height="717" alt="Key Management Service Properties - 10" src="https://github.com/user-attachments/assets/d0361ead-c0b9-4eb0-bac5-697e6e397b72" />   
+
+<img width="1018" height="716" alt="Key Management Service Advanced - 11" src="https://github.com/user-attachments/assets/2aa385db-8fbd-4d8e-b3c6-f331524e222e" />    
+
+
+<img width="1012" height="713" alt="Block The Connection For Public Advanced - 14" src="https://github.com/user-attachments/assets/4c473358-c7fa-42be-bfe9-2ed683f7059e" />    
+
+The screenshots also show the configuration of a blocking rule for the Public network profile.
+
+In the later Inbound Rules overview, two enabled Key Management Service rules were displayed:
+
+| Network profile | Rule enabled | Action |
+|---|---|---|
+| Domain | Yes | Allow |
+| Public | Yes | Block |
+
+This demonstrates how firewall rules can apply different access restrictions depending on the network profile.
+
+<img width="1014" height="717" alt="Rules Enabled - 16" src="https://github.com/user-attachments/assets/49d2c9fa-dc51-4ac4-9aab-32c6a5cb6d2f" />    
+
+**Security consideration:** Services required within a managed organizational network should not automatically be accessible from less trusted networks. Restricting inbound connections according to network profile helps reduce unnecessary exposure.
+
+The screenshots document the configured rule properties and their displayed status. They do not independently demonstrate successful KMS communication or confirm that blocked connections were tested.
 
 
 ### 2.5 Windows Remote Management – Inbound Rule
