@@ -121,6 +121,26 @@ The screenshots above confirm the displayed firewall status and active network p
 
 
 ### 2.2 Application Exceptions
+The Windows Defender Firewall application exceptions were reviewed through the **Allow an app through firewall** interface.
+
+This interface allows administrators to configure which applications and Windows features are permitted to communicate through the firewall on Private and Public networks.
+
+The initial screenshot showed several configured application exceptions, including:
+
+- **Mozilla Firefox:** Allowed on Private networks only.
+- **Google Chrome:** Allowed on both Private and Public networks.
+- **File and Printer Sharing:** Not enabled in the displayed list.
+- **mDNS:** Allowed on both Private and Public networks.
+
+<img width="781" height="594" alt="Allow an App through Firewall - 6" src="https://github.com/user-attachments/assets/056d8464-4b7b-4f95-9b7c-48c78bbc01bd" />   
+
+A later screenshot showed Mozilla Firefox selected with both the Private and Public checkboxes enabled, indicating a change in the displayed application exception configuration.
+
+<img width="785" height="596" alt="Allow an App through Firewall - 7" src="https://github.com/user-attachments/assets/531188de-0525-4f7a-8f81-aa49612cef3c" />     
+
+**Security consideration:** Application exceptions should be limited to the network profiles where they are required. Allowing applications to receive unsolicited inbound connections on Public networks can increase the system's attack surface.
+
+The screenshots document the displayed exception settings and their differences. They do not independently verify whether the applications were listening for incoming connections or whether network traffic was successfully permitted through the firewall.
 
 
 
