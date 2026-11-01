@@ -220,6 +220,29 @@ The screenshots document the configured rule properties and their displayed stat
 
 ### 2.5 Windows Remote Management – Inbound Rule
 
+The predefined **Windows Remote Management (HTTP-In)** firewall rule was examined through Windows Defender Firewall with Advanced Security.
+
+Windows Remote Management (WinRM) enables remote administration of Windows systems and is used by management tools and PowerShell remoting. WinRM commonly uses TCP port **5985** for HTTP-based communication.
+
+The available screenshots document the inspection of the inbound firewall rule, including:
+
+- **Rule name:** Windows Remote Management (HTTP-In).
+- **Protocol and port:** TCP port 5985.
+- **Rule status:** Enabled.
+- **Action:** Block the connection.
+
+The rule properties showed that the firewall action was configured to **Block the connection**.
+
+<img width="1009" height="719" alt="Block Windows Remote Management On The Public Network - 17" src="https://github.com/user-attachments/assets/8d889dcd-a2de-49f2-a72a-d97afe704929" />    
+
+<img width="1015" height="727" alt="Block Windows Remote Management On The Public Network Advanced - 18" src="https://github.com/user-attachments/assets/9a396dfe-c4a2-4512-9322-3542ce0bb3ae" />    
+
+
+**Security consideration:** Remote management services can provide powerful administrative access to a system. Unnecessary exposure of WinRM should therefore be restricted, particularly on untrusted networks.
+
+Blocking inbound WinRM connections can reduce the attack surface when remote administration is not required. In managed environments, however, firewall restrictions must be balanced against legitimate administration and operational requirements.
+
+The screenshots document the displayed firewall rule configuration. They do not independently verify that WinRM was listening on TCP port 5985 or that an attempted remote connection was successfully blocked.
 
 
 ### 2.6 Security Findings and Verification Limitations
